@@ -1,0 +1,262 @@
+---
+description: Use this skill when you need to understand the design system of Fly.io, including its color palette, typography, spacing, and border-radius scales, to ensure consistency in interfaces.
+globs:
+  - "**/*"
+alwaysApply: false
+---
+
+```yaml
+brand: Fly.io
+mood: Whimsical, developer-focused, and confident, inspiring creativity and fearless building.
+
+colors:
+  primary: "#7c3aed"
+  primary-bright: "#8c52f1"
+  primary-deep: "#6d28d9"
+  primary-light: "#ca7ff8"
+  on-primary: "#ffffff"
+  ink: "#281950"
+  ink-soft: "#676b89"
+  on-ink: "#ffffff"
+  canvas: "#f1f2f9"
+  paper: "#e7e6f4"
+  cloud: "#ffffff"
+  hairline: "#ccd0e0"
+  hairline-strong: "#a39ac1"
+  link: "#7c3aed"
+  link-pressed: "#6d28d9"
+  accent-success: "#10b981"
+  accent-info: "#3b82f6"
+  accent-warning: "#f97316"
+  accent-highlight: "#f59e0b"
+
+typography:
+  display-xl: { fontFamily: "Mackinac", fontSize: 64px, fontWeight: 575, lineHeight: 1.1 }
+  display-md: { fontFamily: "Mackinac", fontSize: 36px, fontWeight: 575, lineHeight: 1.2 }
+  body-lg: { fontFamily: "Fricolage Grotesque", fontSize: 19px, fontWeight: 450, lineHeight: 1.6 }
+  body-md: { fontFamily: "Fricolage Grotesque", fontSize: 17px, fontWeight: 450, lineHeight: 1.6 }
+  body-sm: { fontFamily: "Fricolage Grotesque", fontSize: 15px, fontWeight: 450, lineHeight: 1.5 }
+  caption-md: { fontFamily: "Fricolage Grotesque", fontSize: 12px, fontWeight: 500, lineHeight: 1.2 }
+  button-md: { fontFamily: "Fricolage Grotesque", fontSize: 16px, fontWeight: 500, lineHeight: 1 }
+  link-md: { fontFamily: "Fricolage Grotesque", fontSize: 15px, fontWeight: 500, lineHeight: 1 }
+
+rounded:
+  none: 0px
+  sm: 4px
+  md: 8px
+  lg: 10px
+  xl: 16px
+  pill: 9999px
+
+spacing:
+  xxs: 4px
+  xs: 8px
+  sm: 12px
+  md: 16px
+  lg: 24px
+  xl: 32px
+  xxl: 48px
+  section: 96px
+
+shadows:
+  none: "none"
+  soft-lift: "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
+  card: "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(32, 34, 55, 0.075) 0px 0px 0px 1px, rgba(32, 34, 55, 0.05) 0px 10px 15px -3px, rgba(32, 34, 55, 0.05) 0px 4px 6px -4px"
+  focus: "rgba(67, 56, 202, 0.25) 0px 0px 0px 3px"
+  accent-glow-success: "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(16, 185, 129, 0.35) 0px 0px 0px 1px, rgba(16, 185, 129, 0.3) 0px 20px 25px -5px, rgba(16, 185, 129, 0.3) 0px 8px 10px -6px"
+
+components:
+  button-primary:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.button-md}"
+    rounded: "{rounded.pill}"
+    padding: "16px 28px"
+    border: "none"
+    shadow: "{shadows.soft-lift}"
+  button-primary-hover:
+    backgroundColor: "{colors.primary-bright}"
+    shadow: "{shadows.card}"
+  button-secondary:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.link-md}"
+    rounded: "{rounded.pill}"
+    padding: "10px 20px"
+    border: "1px solid {colors.hairline}"
+    shadow: "{shadows.none}"
+  button-secondary-hover:
+    backgroundColor: "{colors.hairline}"
+    textColor: "{colors.ink}"
+  card:
+    backgroundColor: "{colors.cloud}"
+    rounded: "{rounded.xl}"
+    shadow: "{shadows.card}"
+    padding: "{spacing.xl}"
+    border: "none"
+  input:
+    backgroundColor: "{colors.cloud}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "12px 16px"
+    border: "1px solid {colors.hairline}"
+  input-focus:
+    border: "1px solid {colors.primary}"
+    shadow: "{shadows.focus}"
+  navigation-link:
+    textColor: "{colors.ink-soft}"
+    typography: "{typography.link-md}"
+    padding: "{spacing.xs} {spacing.md}"
+    rounded: "{rounded.pill}"
+  navigation-link-hover:
+    textColor: "{colors.ink}"
+    backgroundColor: "{colors.paper}"
+  badge:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.primary}"
+    typography: "{typography.caption-md}"
+    rounded: "{rounded.pill}"
+    padding: "4px 12px"
+```
+
+## Visual Theme & Atmosphere
+
+The Fly.io design system exudes a whimsical, creative, and approachable atmosphere tailored for developers who value speed and simplicity. It balances playful, hand-drawn illustrations with a clean, sophisticated, and highly functional user interface. The mood is confident and inspiring, suggesting that building complex applications can be a fearless and even delightful experience. This is achieved through a soft, ethereal color palette, elegant typography, and generous use of white space, creating a sense of calm and focus amidst the technical complexity of modern infrastructure.
+
+Key Characteristics:
+*   **Dual-Font Typography**: A sophisticated pairing of a serif (`Mackinac`) for expressive, high-impact headlines like `{typography.display-xl}` and a clean, modern sans-serif (`Fricolage Grotesque`) for all body and UI text, ensuring both personality and clarity.
+*   **Purple-Centric Palette**: The brand is anchored by a vibrant yet friendly purple, `{colors.primary}`, used exclusively for primary actions. This is supported by a range of soft, muted tones like `{colors.canvas}` and `{colors.paper}` that create a calm, airy backdrop.
+*   **Playful Illustrations**: Unique, hand-drawn illustrations are a core brand asset, injecting personality and visual storytelling into a technical product category.
+*   **Soft and Pill-Shaped Elements**: Interactive elements like buttons and badges consistently use `{rounded.pill}`, while containers like cards use a generous `{rounded.xl}`, creating a friendly, non-intimidating feel.
+*   **Subtle Depth and Elevation**: Depth is created not with heavy shadows, but with the detailed `{shadows.card}`, which combines a soft glow with a crisp border, making elements feel lifted and distinct.
+*   **Generous Spacing**: A disciplined spacing rhythm, with large gaps like `{spacing.section}` between content blocks, allows content and illustrations to breathe, reducing cognitive load and improving focus.
+*   **Ethereal Gradients**: Gentle, multi-toned gradients are used in hero sections and backgrounds, contributing to the dreamy, imaginative aesthetic.
+
+## Color Usage Rules
+
+The color palette is designed for clarity, focus, and brand consistency. Each color has a specific role and should be used according to the following guidelines to maintain the intended visual hierarchy and atmosphere.
+
+*   `{colors.primary}` (`#7c3aed`) is the brand's signature action color. It must be used exclusively for primary calls-to-action, such as the main "Deploy" or "Get Started" buttons. To preserve its impact, limit its use to a maximum of two instances per viewport. It should never be used for text, backgrounds, or decorative elements.
+*   `{colors.ink}` (`#281950`) is the primary color for all high-emphasis text, particularly headlines using `{typography.display-xl}` or `{typography.display-md}`. Its deep purple hue provides excellent contrast on light backgrounds while tying into the overall brand palette.
+*   `{colors.ink-soft}` (`#676b89`) should be used for all body copy, sub-headlines, and secondary text. Its softer tone is easier on the eyes for long-form reading and creates a clear hierarchy against the darker `{colors.ink}`.
+*   `{colors.canvas}` (`#f1f2f9`) is the global background color for the entire application or website. It provides a soft, off-white base that is more calming than pure white. All pages should start with this as their base layer.
+*   `{colors.paper}` (`#e7e6f4`) is used for slightly elevated background surfaces that require subtle differentiation, such as the main navigation bar or the background of an active tab. It creates a gentle layering effect on top of `{colors.canvas}`.
+*   `{colors.cloud}` (`#ffffff`) is reserved for the highest-elevation UI elements, specifically cards or panels that need to "float" above the content. It provides the crispest background for content and works in tandem with `{shadows.card}`.
+*   `{colors.hairline}` and `{colors.hairline-strong}` are used for non-interactive borders, dividers, and separators. Use `{colors.hairline}` for subtle divisions and `{colors.hairline-strong}` for more prominent ones, such as table headers.
+*   `{colors.link}` should follow the `{colors.primary}` color to ensure that interactive text elements are clearly identified with the brand's action color.
+*   The accent colors (`{colors.accent-success}`, `{colors.accent-info}`, etc.) are purely for semantic, contextual feedback. They should be used sparingly for things like success messages, feature highlighting, or log level indicators, often accompanied by their corresponding `{shadows.accent-glow-*}` shadow. They must not be used for general UI decoration.
+
+## Typography Hierarchy
+
+The Fly.io typographic system is built on a clear distinction between expressive headlines and functional body copy. It achieves this by pairing the elegant serif `Mackinac` for display text with the highly legible sans-serif `Fricolage Grotesque` for everything else. This duality allows the brand to be both captivating and clear, drawing users in with beautiful headings and guiding them effortlessly through dense information.
+
+| Role           | Token                    | Use                                                              |
+| :------------- | :----------------------- | :--------------------------------------------------------------- |
+| Display XL     | `{typography.display-xl}`  | Main hero headlines; the most important message on the page.     |
+| Display MD     | `{typography.display-md}`  | Major section titles that introduce a new topic or feature.      |
+| Body Large     | `{typography.body-lg}`   | Sub-headlines in the hero or introductory paragraphs for sections. |
+| Body Medium    | `{typography.body-md}`   | The default text size for all standard paragraphs and body copy. |
+| Body Small     | `{typography.body-sm}`   | Secondary or less important text, footnotes, or dense lists.     |
+| Caption Medium | `{typography.caption-md}`  | UI labels, metadata, and timestamps.                             |
+| Button Medium  | `{typography.button-md}` | All primary and secondary button labels.                         |
+| Link Medium    | `{typography.link-md}`   | All navigational links, including the main header navigation.    |
+
+**Typography Principles:**
+
+1.  **Strict Role Adherence:** `Mackinac` is for display text only (`display-*` roles). `Fricolage Grotesque` is for all other text. Never mix these roles; for example, do not use `Mackinac` for a button label.
+2.  **Comfortable Line Height:** Body text maintains a generous line height of `1.6` (`{typography.body-md}`, `{typography.body-lg}`) to ensure readability in long passages. Headlines use tighter line heights (`1.1` to `1.2`) for a more compact, impactful block.
+3.  **Establish Clear Contrast:** Use `{colors.ink}` for headlines and `{colors.ink-soft}` for body copy to naturally guide the user's eye from high-level topics to detailed explanations.
+4.  **Responsive Sizing:** While the token values represent the desktop size, all typography should scale down gracefully on smaller viewports to maintain hierarchy and prevent awkward line breaks.
+5.  **No All-Caps:** Text should always be set in sentence case or title case where appropriate. Avoid using `text-transform: uppercase` as it conflicts with the friendly, approachable aesthetic.
+
+## Component Patterns
+
+Components are the reusable building blocks of the UI. They are built from the core tokens and are designed to be composed into complex, consistent interfaces.
+
+**Primary Button (`button-primary`)**
+This is the most important interactive element, designed to draw immediate attention to the single most important action on a page. Use it for "Deploy your app" or "Sign Up". It features `{colors.primary}` background, `{colors.on-primary}` text, and a friendly `{rounded.pill}` shape. On hover, it brightens to `{colors.primary-bright}` and gains a subtle `{shadows.card}` to indicate elevation. Any accompanying icon should be placed to the right of the text label.
+
+**Secondary Button (`button-secondary`)**
+Used for secondary actions that are less critical than the primary one, like "Sign In" or "View Docs". Its subtle appearance, with a `{colors.paper}` background and `{colors.hairline}` border, ensures it doesn't compete with the primary button. On hover, the background darkens slightly to `{colors.hairline}`.
+
+**Card (`card`)**
+A `{components.card}` is the standard container for grouping related content, such as a blog post summary, a pricing tier, or a user profile. It uses a `{colors.cloud}` background and `{rounded.xl}` to appear clean and distinct. The defining feature is its `{shadows.card}`, which provides a sophisticated lift off the `{colors.canvas}` background without being heavy-handed. Padding is always `{spacing.xl}` to give content ample room to breathe.
+
+**Input (`input`)**
+Standard text fields should use the `{components.input}` style. They are simple and clean, with a `{colors.hairline}` border and `{rounded.md}`. When focused, the component must change its state to `{components.input-focus}`, which applies a `{colors.primary}` border and a prominent `{shadows.focus}` glow. This provides clear, accessibility-friendly feedback that the field is active.
+
+**Navigation Link (`navigation-link`)**
+Used for all links within the primary site navigation. By default, they use the muted `{colors.ink-soft}`. The hover state, `{components.navigation-link-hover}`, is critical for usability: the text color changes to `{colors.ink}` and it gains a `{colors.paper}` background with a `{rounded.pill}` shape, making the active target clear and tangible.
+
+**Badge (`badge`)**
+Badges are used for small, non-interactive labels that provide metadata or categorization, such as "New Feature" or a blog category. They use a `{colors.paper}` background and `{colors.primary}` text to draw attention without the weight of a button, and the `{rounded.pill}` shape makes them visually consistent with other small UI elements.
+
+## Layout & Spacing
+
+The layout system is designed to be open, airy, and focused, using a consistent spacing rhythm to create visual harmony and reduce cognitive load. The foundation of the system is a baseline grid of 8px, from which all `{spacing}` tokens are derived.
+
+The standard page structure consists of a wide, centered content column with a maximum width of 1280px. This column sits on the global `{colors.canvas}` background. Content is organized into horizontal sections, and each section must be separated by `{spacing.section}` of vertical space. This generous spacing is a core principle, ensuring each part of the narrative has room to stand on its own.
+
+Within sections, spacing is applied consistently using the token scale. For example, the space between a headline and its corresponding paragraph should be `{spacing.lg}`, while elements within a tight group, like a form label and its input, should use `{spacing.xs}`. Card padding is always `{spacing.xl}`, creating a consistent internal margin for all contained content.
+
+Grids are used to structure content within sections. On desktop, layouts commonly use two or three columns with ample gutters (typically `{spacing.xl}` or `{spacing.xxl}`). These grids are fluid and designed to collapse gracefully on smaller screens. The generous use of negative space is not accidental; it is a key design choice that elevates the content and allows the whimsical brand illustrations to feel integrated and impactful rather than crowded.
+
+## Do's and Don'ts
+
+**Do's**
+
+1.  **Do** always pair a `{typography.display-xl}` headline in `Mackinac` with a `{typography.body-lg}` sub-headline in `Fricolage Grotesque`.
+2.  **Do** use `{components.card}` with its defined `{shadows.card}` to contain every distinct, self-contained piece of content.
+3.  **Do** ensure every interactive element (buttons, links, inputs) has a `:focus` state that uses `{shadows.focus}` for accessibility.
+4.  **Do** separate major page sections with exactly `{spacing.section}` of vertical margin.
+5.  **Do** use `{colors.primary}` exclusively for primary action buttons, limiting it to one or two instances per view.
+6.  **Do** apply the `{rounded.pill}` radius to all button-like interactive elements for a consistent, friendly UI.
+7.  **Do** use the `{colors.accent-*}` colors only for their semantic meaning (e.g., `{colors.accent-success}` for a successful operation).
+8.  **Do** ensure body text is always set in `{colors.ink-soft}` for optimal readability.
+
+**Don'ts**
+
+1.  **Don't** use `Mackinac` font for any text that is not a major headline. All body copy and UI text must be `Fricolage Grotesque`.
+2.  **Don't** apply custom shadows. Only use the predefined `{shadows.soft-lift}` and `{shadows.card}`.
+3.  **Don't** use `{colors.primary}` for text or backgrounds. It is an action color only.
+4.  **Don't** create layouts with insufficient whitespace. Gutters and margins should use tokens like `{spacing.xl}` or larger.
+5.  **Don't** use borders on cards. The `{shadows.card}` token already includes a subtle border effect.
+6.  **Don't** create a button or interactive element without a distinct hover state, like `{components.button-primary-hover}`.
+7.  **Don't** place text directly on top of illustrative or gradient backgrounds without ensuring sufficient contrast.
+8.  **Don't** nest more than one level of `{components.card}`. Keep the layout hierarchy flat and clean.
+
+## Responsive Behavior
+
+The design system is fully responsive, ensuring a seamless and intuitive experience across all device sizes. The following breakpoints and behaviors should be strictly adhered to.
+
+| Viewport        | Breakpoint      | Description                                                                                                                              |
+| :-------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| Mobile          | < 480px         | Single-column layout. Type scales down, touch targets are enlarged.                                                                      |
+| Mobile-Large    | 480px – 767px   | Still primarily single-column, but with more generous margins.                                                                           |
+| Tablet          | 768px – 1023px  | Introduction of two-column grids where appropriate. Navigation may still be collapsed.                                                   |
+| Desktop         | 1024px – 1279px | The standard desktop experience. Full navigation is visible. Two and three-column layouts are common.                                    |
+| Desktop-Large   | ≥ 1280px        | The layout width is capped at 1280px and centered. Margins increase to use the extra space, preventing content from becoming too wide. |
+
+**Key Responsive Behaviors:**
+
+*   **Touch Targets:** All interactive elements must have a minimum touch target size of 44x44px on mobile and tablet. The `{components.button-primary}` has a height that exceeds this, making it compliant by default.
+*   **Navigation:** On `Tablet` and smaller viewports, the main header navigation defined by `{components.navigation-link}` collapses into a hamburger menu icon. The menu itself opens as a full-screen overlay or a slide-out panel.
+*   **Hero Section:** The main hero section adapts significantly. The `{typography.display-xl}` headline will wrap and reduce in font size. The large background illustration may be cropped, simplified, or repositioned to ensure the primary headline and CTA remain visible and unobstructed.
+*   **Grids:** Any multi-column grid (e.g., feature lists, pricing tables) must stack into a single, vertical column on the `Mobile` breakpoint. For `Tablet`, a two-column layout is often acceptable before expanding to three or more on `Desktop`.
+*   **Images & Illustrations:** All illustrations and imagery must be fluid, scaling proportionally to fit their container. They should never overflow or cause horizontal scrolling.
+
+## Iteration Guide
+
+When building new UI or iterating on existing designs in the Fly.io style, follow these steps to ensure consistency and quality.
+
+1.  **Establish the Foundation:** Begin every page with a `{colors.canvas}` background. Structure your content into logical sections and separate each with a `{spacing.section}` vertical margin to establish the core rhythm.
+2.  **Set the Typographic Hierarchy:** Place a single, compelling headline at the top of the page or section using `{typography.display-xl}` in `{colors.ink}`. All subsequent body text must use `Fricolage Grotesque`, primarily `{typography.body-md}` in `{colors.ink-soft}`.
+3.  **Define the Primary Action:** Identify the single most important action the user should take and implement it using a `{components.button-primary}`. Ensure this button is highly visible and any secondary actions use the `{components.button-secondary}` style.
+4.  **Organize Content into Cards:** Group related sets of information (e.g., testimonials, feature blurbs, pricing details) inside `{components.card}` containers. This leverages the brand's signature elevation style with `{shadows.card}`.
+5.  **Ensure Interactive Feedback:** Meticulously implement hover and focus states for all interactive elements. A hover must trigger a visual change (e.g., `{components.button-primary-hover}`), and a focus state must apply `{shadows.focus}` for keyboard navigation.
+6.  **Apply Consistent Rounding:** Use the `{rounded}` tokens with strict discipline. All buttons and button-like elements get `{rounded.pill}`. All cards and larger containers get `{rounded.xl}`. Do not mix and match.
+7.  **Add Whimsical Detail:** Once the functional UI is in place, integrate hand-drawn illustrations that align with the brand's aesthetic. Use them to add personality and visual interest, but never at the expense of clarity or usability.
+8.  **Validate Spacing:** Review all margins and paddings, ensuring they map to the `{spacing}` scale. The space between elements should feel intentional and generous. Avoid custom or magic numbers.
+9.  **Conduct Responsive Testing:** Resize the viewport through all defined breakpoints (`Mobile` to `Desktop-Large`) to verify that layouts reflow correctly, typography scales appropriately, and touch targets remain usable.
+10. **Check for Semantic Color Use:** Before finalizing, double-check that colors are used for their intended purpose. `{colors.primary}` is only for actions, `{colors.accent-success}` is only for success feedback, etc.

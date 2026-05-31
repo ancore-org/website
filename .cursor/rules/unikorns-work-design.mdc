@@ -1,0 +1,248 @@
+---
+description: Use this skill when you need design assets or inspiration from Unikorns Work, a creative department offering premium services for brands lacking in-house capacity.
+globs:
+  - "**/*"
+alwaysApply: false
+---
+
+```yaml
+brand: Unikorns Work
+mood: A professional and serene digital landscape where premium creative services are delivered with clarity and confidence.
+
+colors:
+  primary: "#cbe786"
+  primary-bright: "#d5ec9a"
+  primary-deep: "#b9d36e"
+  on-primary: "#1f4800"
+  ink: "#000000"
+  ink-soft: "#4a4a4a"
+  on-ink: "#ffffff"
+  canvas: "#f2f5f6"
+  paper: "#ffffff"
+  hairline: "#e0e0e0"
+  link: "#000000"
+  link-pressed: "#333333"
+  success: "#00ac47"
+  success-bright: "#17c26b"
+  accent-sun: "#ffca00"
+
+typography:
+  display-xl: { fontFamily: "Instrument Serif", fontSize: 72px, fontWeight: 400, lineHeight: 1.1 }
+  display-lg: { fontFamily: "Instrument Serif", fontSize: 48px, fontWeight: 400, lineHeight: 1.2 }
+  display-md: { fontFamily: "Instrument Serif", fontSize: 40px, fontWeight: 400, lineHeight: 1.25 }
+  display-sm: { fontFamily: "Instrument Serif", fontSize: 24px, fontWeight: 400, lineHeight: 1.3 }
+  body-lg: { fontFamily: "Aeonik Regular", fontSize: 18px, fontWeight: 400, lineHeight: 1.6 }
+  body-md: { fontFamily: "Aeonik Regular", fontSize: 16px, fontWeight: 400, lineHeight: 1.5 }
+  caption-md: { fontFamily: "Aeonik Regular", fontSize: 14px, fontWeight: 400, lineHeight: 1.4 }
+  caption-sm: { fontFamily: "Aeonik Regular", fontSize: 12px, fontWeight: 400, lineHeight: 1.3 }
+  button-md: { fontFamily: "Aeonik Medium", fontSize: 14px, fontWeight: 500, lineHeight: 1 }
+  nav-link: { fontFamily: "Aeonik Regular", fontSize: 14px, fontWeight: 400, lineHeight: 1 }
+
+rounded:
+  none: 0px
+  sm: 4px
+  md: 8px
+  lg: 16px
+  xl: 30px
+  pill: 50px
+
+spacing:
+  xxs: 4px
+  xs: 8px
+  sm: 12px
+  md: 16px
+  lg: 24px
+  xl: 32px
+  xxl: 48px
+  xxxl: 64px
+  section: 80px
+
+shadows:
+  none: "none"
+  soft-lift: "0px 4px 20px 0px rgba(0, 0, 0, 0.05)"
+
+components:
+  button-primary:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.on-ink}"
+    typography: "{typography.button-md}"
+    rounded: "{rounded.pill}"
+    padding: "12px 24px"
+    height: "40px"
+    border: "none"
+    shadow: "{shadows.none}"
+  button-primary-hover:
+    backgroundColor: "{colors.ink-soft}"
+  button-secondary:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.button-md}"
+    rounded: "{rounded.pill}"
+    padding: "12px 24px"
+    height: "40px"
+    border: "1px solid {colors.hairline}"
+    shadow: "{shadows.none}"
+  button-secondary-hover:
+    backgroundColor: "{colors.canvas}"
+  card:
+    backgroundColor: "{colors.canvas}"
+    rounded: "{rounded.xl}"
+    padding: "{spacing.lg}"
+    border: "none"
+    shadow: "{shadows.none}"
+  input:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "10px 12px"
+    border: "1px solid {colors.hairline}"
+  input-focus:
+    border: "1px solid {colors.ink}"
+    shadow: "0 0 0 3px rgba(0, 0, 0, 0.08)"
+  navigation:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.nav-link}"
+    rounded: "{rounded.pill}"
+    padding: "6px 6px 6px 24px"
+    shadow: "{shadows.soft-lift}"
+  badge:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.caption-md}"
+    rounded: "{rounded.pill}"
+    padding: "4px 12px"
+    border: "1px solid {colors.hairline}"
+```
+
+## Visual Theme & Atmosphere
+The Unikorns Work design system creates a visual theme that is simultaneously serene, professional, and modern. It balances the classic elegance of serif typography with the clarity of a clean, minimalist sans-serif, establishing a tone of confident expertise. The atmosphere is calm and focused, using generous whitespace and a restrained color palette to let the content breathe and guide the user's attention without distraction. This environment is designed to feel like a premium, well-organized digital studio: approachable yet authoritative, creative yet structured.
+
+The extensive use of soft, rounded corners, seen in `{rounded.pill}` buttons and `{rounded.xl}` cards, contributes to a friendly and organic feel, contrasting beautifully with the sharp, high-contrast text. This softness is complemented by nature-inspired hero imagery, which grounds the high-tech service offering in something more elemental and human. The core palette of `{colors.ink}`, `{colors.paper}`, and `{colors.canvas}` provides a sophisticated monochromatic base, while the selective use of a vibrant `{colors.primary}` lime green injects energy and highlights key information, ensuring the brand feels fresh and dynamic.
+
+Key Characteristics:
+*   **Dual-Font Personality**: An elegant serif, `Instrument Serif`, is used for all headings like `{typography.display-xl}`, conveying creativity and gravitas, while a clean sans-serif, `Aeonik`, is used for all body and UI text like `{typography.body-md}`, ensuring maximum readability and a modern feel.
+*   **High-Contrast Monochrome Base**: The core of the design relies on the stark contrast between `{colors.ink}` text and `{colors.paper}` or `{colors.canvas}` surfaces, creating a clear, accessible, and focused reading experience.
+*   **Energetic Accent Color**: The vibrant `{colors.primary}` is used sparingly but effectively as a background color to draw attention to critical sections, providing a jolt of fresh, natural energy.
+*   **Soft and Organic Forms**: Interactive elements and containers favor fully rounded (`{rounded.pill}`) or largely rounded (`{rounded.xl}`) corners, avoiding sharp edges to create a more approachable and less intimidating interface.
+*   **Atmospheric Imagery**: Hero sections utilize large, high-quality, nature-themed photography to establish a serene and expansive mood, setting the stage for the professional services offered.
+*   **Floating Navigation**: The main navigation is a distinct, floating element defined by `{components.navigation}`, using a `{rounded.pill}` shape and `{shadows.soft-lift}` to create a sense of lightness and detachment from the page content.
+*   **Whitespace as a Tool**: The layout heavily relies on generous spacing, using tokens like `{spacing.section}` and `{spacing.xxxl}` to separate elements, define regions, and guide the user's eye through the content flow.
+
+## Color Usage Rules
+The color system is built on a foundation of high-contrast neutrals, punctuated by a single, vibrant primary accent. Adherence to these rules is critical for maintaining the brand's sophisticated and clean aesthetic.
+
+*   **Primary Action & Text (`{colors.ink}`)**: `{colors.ink}` is the default color for all body text, headings, and links. It is also used as the background for the single most important call-to-action on a page, as defined in `{components.button-primary}`. Its corresponding text color must always be `{colors.on-ink}`.
+*   **Primary Accent (`{colors.primary}`)**: This vibrant lime green is exclusively for background use. It must not be used for text. Its primary purpose is to highlight a single, critical section, such as the most popular pricing tier or a key value proposition. `{colors.primary}` should appear at most once per viewport to preserve its visual impact. All text on this color must use `{colors.on-primary}` to ensure sufficient contrast.
+*   **Surfaces (`{colors.paper}` & `{colors.canvas}`)**: These two off-white and light gray tones form the canvas of the application. `{colors.paper}` (`#ffffff`) is the brighter of the two, used for elevated, interactive, or foreground elements like navigation bars (`{components.navigation}`), modals, and secondary buttons. `{colors.canvas}` (`#f2f5f6`) is the primary background for content sections and cards (`{components.card}`). For long-scrolling pages, alternate sections using `{colors.paper}` and `{colors.canvas}` to create a subtle rhythm and visual separation.
+*   **Secondary Text (`{colors.ink-soft}`)**: Use `{colors.ink-soft}` for less important text, such as secondary labels, helper text in forms, or placeholder content. It provides a softer alternative to `{colors.ink}` without compromising readability. It can also be used for hover states on dark components, like in `{components.button-primary-hover}`.
+*   **Borders (`{colors.hairline}`)**: `{colors.hairline}` is the only color to be used for borders on components like `{components.button-secondary}` and `{components.input}`. It is intentionally subtle to define shape without creating heavy visual divisions.
+*   **Promotional Banners (`{colors.accent-sun}`)**: This warm yellow is reserved for the global announcement banner at the very top of the page. It should never be used within the main page content. Text on this banner should be `{colors.ink}`.
+*   **System Feedback (`{colors.success}`, `{colors.success-bright}`)**: Use `{colors.success}` and its brighter variant `{colors.success-bright}` for positive feedback, such as form submission success messages or validation checkmarks.
+
+## Typography Hierarchy
+The typographic system is built on a deliberate and strict dual-family hierarchy. `Instrument Serif` is reserved exclusively for headings, lending a sense of established quality and creative flair. `Aeonik` is used for all other text, from body copy to UI controls, ensuring clarity, modernity, and excellent legibility at all sizes. This separation is fundamental to the brand's visual identity and must be maintained without exception.
+
+| Role | Token | Use |
+| :--- | :--- | :--- |
+| Extra-Large Display | `{typography.display-xl}` | The main page hero headline (H1). Used once per page. |
+| Large Display | `{typography.display-lg}` | Major section headings (H2). |
+| Medium Display | `{typography.display-md}` | Sub-section headings (H3) or prominent callouts. |
+| Small Display | `{typography.display-sm}` | Headings for individual items, such as on cards or in lists. |
+| Large Body | `{typography.body-lg}` | Introductory paragraphs or important descriptive text. |
+| Medium Body | `{typography.body-md}` | The default for all paragraph text and form inputs. |
+| Medium Caption | `{typography.caption-md}` | Helper text, metadata, labels, and footer links. |
+| Small Caption | `{typography.caption-sm}` | The smallest text size, for tertiary information or legal disclaimers. |
+| Button | `{typography.button-md}` | The standard text style for all buttons. |
+| Navigation Link | `{typography.nav-link}` | For all links within the main `{components.navigation}` bar. |
+
+Key Typographic Principles:
+1.  **Strict Font Roles**: Never mix the roles of `Instrument Serif` and `Aeonik`. Headings are always serif; body and UI text are always sans-serif.
+2.  **Prioritize Readability**: All body copy, specifically `{typography.body-md}` and `{typography.body-lg}`, must maintain generous line height (1.5-1.6) to ensure comfort during extended reading.
+3.  **Establish Clear Hierarchy**: Use the defined display and body tokens to create a clear and scannable content structure. Do not skip heading levels.
+4.  **Limited Weights**: The system primarily uses `fontWeight: 400` (Regular) for readability and `fontWeight: 500` (Medium) for UI actions (`{typography.button-md}`). Avoid using heavier weights unless a specific token is created.
+5.  **Left Alignment for Body**: All paragraph text should be left-aligned for optimal reading flow. Centered text should be reserved for short, impactful headings like the `{typography.display-xl}` hero title.
+
+## Component Patterns
+Components are the reusable building blocks of the UI, combining tokens into functional patterns. Each component is designed to be clean, clear, and consistent with the overall serene aesthetic.
+
+*   **Primary Button (`{components.button-primary}`)**: This is the principal call-to-action button. Its `{colors.ink}` background provides maximum visual weight, drawing the user's eye. Use it sparingly—ideally only once per page view (e.g., in the header and a final CTA section). The `{rounded.pill}` shape makes it friendly and distinct. On hover, the background softens to `{colors.ink-soft}` as defined in `{components.button-primary-hover}`.
+
+*   **Secondary Button (`{components.button-secondary}`)**: For all other actions, use the secondary button. Its `{colors.paper}` background and `{colors.hairline}` border make it visually lighter than the primary button, establishing a clear hierarchy. It's suitable for actions like "Learn More" or "View All". The hover state, `{components.button-secondary-hover}`, transitions the background to `{colors.canvas}`.
+
+*   **Card (`{components.card}`)**: Cards are used to group related content into a single, digestible unit. They are defined by their `{colors.canvas}` background, generous `{rounded.xl}` radius, and substantial internal `{spacing.lg}` padding. They never have borders or shadows, relying solely on their background color and the surrounding whitespace for separation from the page canvas.
+
+*   **Input (`{components.input}`)**: Form inputs are designed for clarity and ease of use. They feature a standard `{colors.paper}` background with a subtle `{colors.hairline}` border. When focused, the state changes according to `{components.input-focus}`, with the border color becoming `{colors.ink}` and a soft focus ring appearing to provide unambiguous feedback to the user.
+
+*   **Navigation (`{components.navigation}`)**: The main site navigation is a floating, pill-shaped component that remains fixed at the top of the viewport. Its `{colors.paper}` background and `{shadows.soft-lift}` ensure it sits above the page content. The `{rounded.pill}` shape and generous padding create a self-contained and elegant control bar.
+
+*   **Badge (`{components.badge}`)**: Badges are small, read-only elements used for displaying metadata like tags, categories, or ratings. They share the `{rounded.pill}` shape of buttons but are smaller and use `{typography.caption-md}`. The `{colors.hairline}` border provides definition without adding significant visual weight.
+
+## Layout & Spacing
+The layout and spacing system is designed to create a calm, organized, and uncluttered user experience. It relies on a consistent rhythm and generous use of negative space to guide the user and establish a clear information hierarchy.
+
+The foundational unit of the spacing system is `{spacing.xs}`, which is 8px. All margins, paddings, and positional offsets must be a multiple of this value. This creates a consistent vertical and horizontal rhythm throughout the entire interface. For example, padding inside a card might be `{spacing.lg}` (24px), while the margin between text elements might be `{spacing.md}` (16px).
+
+Major page sections are visually separated by a large vertical gap of `{spacing.section}` (80px). This significant amount of space allows each content block to be perceived as a distinct thought, preventing the page from feeling dense or overwhelming. Within these sections, a containing element with a maximum width of 1200px centers the content, ensuring comfortable line lengths for reading on large displays.
+
+The page structure often employs alternating background colors for these sections, switching between `{colors.paper}` and `{colors.canvas}`. This technique, known as section banding, subtly groups content and enhances the scannability of long pages.
+
+Grid systems are simple and clear. Feature lists or case study collections typically use a two- or three-column grid, with ample space between columns provided by `{spacing.xxl}` or `{spacing.xxxl}`. The focus is always on preventing elements from feeling cramped. White space is not empty space; it is an active component of the design used to frame content and direct focus.
+
+## Do's and Don'ts
+
+**Do's**
+1.  **Do** use `Instrument Serif` (`{typography.display-xl}`, `{typography.display-lg}`) for all primary and secondary headings.
+2.  **Do** alternate page section backgrounds with `{colors.paper}` and `{colors.canvas}` to create visual rhythm.
+3.  **Do** use `{components.button-primary}` for the single most important call-to-action on a page.
+4.  **Do** ensure all interactive elements use `{rounded.pill}` or `{rounded.xl}` to maintain a soft, organic aesthetic.
+5.  **Do** separate major content sections with a vertical margin of at least `{spacing.section}`.
+6.  **Do** use the `{colors.primary}` background color sparingly to highlight one key area per view.
+7.  **Do** build cards using `{components.card}` specifications, relying on padding and background color, never borders or shadows.
+8.  **Do** ensure all body text maintains a line height of at least 1.5 for optimal readability.
+
+**Don'ts**
+1.  **Don't** use `Instrument Serif` for body copy or UI labels; it is for headings only.
+2.  **Don't** add shadows to any component except for the main navigation (`{shadows.soft-lift}`).
+3.  **Don't** use `{colors.primary}` for text or icons; it is exclusively a background color.
+4.  **Don't** use any spacing values that are not multiples of `{spacing.xs}` (8px).
+5.  **Don't** place sharp, 90-degree corners on any primary UI container or button.
+6.  **Don't** underline links by default. Links should be identified by context and color (`{colors.link}`) and only gain an underline on hover.
+7.  **Don't** create layouts where elements are closer than `{spacing.lg}` to each other unless they are part of a tightly grouped component.
+8.  **Don't** use more than one `{components.button-primary}` in the main content area of a page.
+
+## Responsive Behavior
+The design system is fluid and responsive, ensuring a seamless experience across all device sizes. The following principles guide the adaptation of the layout and components.
+
+| Breakpoint | Dimensions | Behavior |
+| :--- | :--- | :--- |
+| Mobile | <480px | Single-column layout. Grids stack vertically. Typography scales down. Navigation collapses to a hamburger icon. |
+| Mobile-Large | 480–767px | Primarily single-column. Some simple two-column layouts for cards may appear. Touch targets are emphasized. |
+| Tablet | 768–1023px | Two- or three-column grids are introduced. Full navigation may reappear. Margins and padding increase. |
+| Desktop | 1024–1279px | The standard layout. Content is constrained to a max-width container. Generous whitespace is used. |
+| Desktop-Large | ≥1280px | Layout remains the same as Desktop, but horizontal margins increase to keep the content container centered and readable. |
+
+**Touch Targets:** All interactive elements, including buttons, links, and form controls, must have a minimum touch target size of 44x44px to ensure usability on mobile devices. Components like `{components.button-primary}` with their `{typography.button-md}` font size and `12px 24px` padding easily meet this requirement.
+
+**Component Collapsing Strategy:**
+*   **Navigation:** The `{components.navigation}` bar collapses on the Tablet breakpoint. The navigation links are hidden behind a hamburger menu icon, while the logo and primary "Contact" button may remain visible.
+*   **Hero Section:** The `{typography.display-xl}` hero text size is reduced significantly on mobile screens to prevent overflow and awkward line breaks. The atmospheric background image is often cropped, focusing on the most important subject, or replaced with a vertically-oriented version.
+*   **Grids:** Any multi-column grid (e.g., for features or testimonials) must stack into a single, vertical column on Mobile. The Tablet view may adopt a two-column layout as an intermediate step.
+*   **Footer:** The multi-column footer layout will stack into a single column on Mobile, with link groups appearing sequentially.
+
+**Image Behavior:** All images must be fluid, scaling proportionally to fit the width of their containing element. Art direction should be considered for hero images, using different crops or images for mobile vs. desktop to ensure the focal point is always visible.
+
+## Iteration Guide
+When building or extending UI in the Unikorns Work style, follow these steps to ensure consistency and adherence to the design system's principles.
+
+1.  **Establish the Foundation**: Begin by structuring the page with alternating section bands using `{colors.paper}` and `{colors.canvas}` as backgrounds. Separate each section with a vertical margin of `{spacing.section}`.
+2.  **Set the Typographic Stage**: Place the main H1 heading using `{typography.display-xl}`. All subsequent headings must descend in order (`{typography.display-lg}`, `{typography.display-md}`, etc.) using the `Instrument Serif` font family.
+3.  **Write the Narrative**: Populate the sections with body content using `{typography.body-md}` set in `{colors.ink}`. Ensure paragraphs have a line height of 1.5 for comfortable reading.
+4.  **Define Key Actions**: Identify the primary and secondary user actions. Implement the single most important action with `{components.button-primary}`. All other actions must use `{components.button-secondary}`. Maintain the `{rounded.pill}` shape for all buttons.
+5.  **Group Content with Cards**: For features, services, or testimonials, group related information within `{components.card}`. Remember that cards are defined by their `{colors.canvas}` background, `{rounded.xl}` corners, and `{spacing.lg}` padding—never borders or shadows.
+6.  **Apply Accent Color Deliberately**: If a section requires special emphasis, apply the `{colors.primary}` background. Use this only once for maximum impact and ensure text on it uses `{colors.on-primary}`.
+7.  **Construct Forms for Clarity**: When creating forms, use `{components.input}` for all text fields. Verify that the `:focus` state defined in `{components.input-focus}` is implemented to provide clear user feedback.
+8.  **Refine Spacing and Rhythm**: Audit all margins and paddings. Ensure every spacing value is a multiple of `{spacing.xs}` (8px). Adjust whitespace to create breathing room and guide the user's eye naturally through the layout.
+9.  **Verify Responsive Adaptation**: Test the layout at all defined breakpoints (Mobile, Tablet, Desktop). Confirm that grids stack, navigation collapses, and typography scales appropriately to maintain usability on every screen size.
+10. **Perform a Final Review**: Step back and evaluate the overall composition. Does the page feel serene, professional, and clear? Is the hierarchy of information immediately obvious? Is the balance between the classic serif and modern sans-serif effective?
